@@ -1,0 +1,99 @@
+@import './variables';
+@import './mixin';
+
+
+
+
+/*
+p{
+    display: inline;
+    margin-left: 15px;
+    text-decoration: underline;
+    font-size: 15px;
+   
+}
+
+.social-media.blog{
+    width: 240px;
+    height: 40px;
+    transition: ease-in-out;
+    transition-duration: 350ms;
+    &:hover{
+        transform: translateX(-200px)
+    @include makeup(#e17b77, 2);  
+
+       content: Connect on Linkedin;
+    content: Like my facebook page;
+}
+}
+
+*/
+
+
+
+.social-media.blog{
+    position: fixed;
+    bottom: 200px;
+    right: 0;
+    width: 40px;
+    @include makeup(#e17b77);  
+}
+
+.social-media.twitter{
+    position: fixed;
+    bottom: 160px;
+    right: 0;
+    width: 40px;
+   @include makeup(#00aced);  
+}
+        
+.social-media.linkedin {
+    position: fixed;
+    bottom: 120px;
+    right: 0;
+    width: 40px;
+   @include makeup(#007bb6);  
+}
+
+.social-media.facebook {
+    position: fixed;
+    bottom: 80px;
+    right: 0;
+    width: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  @include makeup(#3b5998);  
+  &:hover{    
+    transition: 800ms ease-in-out;
+    position: fixed;
+    bottom: 80px;
+    right: 0px;
+    width: 250px;   
+    &::after{
+    content: "Add me on Facebook";
+    display: inline;
+    background-color: #3b5998;
+    }
+}
+}
+
+.social-media.github {
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+    @include makeup(#333);   
+        &:hover{    
+        transition: 800ms ease-in-out;
+        position: fixed;
+        bottom: 40px;
+        right: 0px;
+        width: 250px;   
+            &::after{
+            content: "See projects on Github";
+            display:inline;
+            background-color: #333;
+        }
+    }
+}
+
+

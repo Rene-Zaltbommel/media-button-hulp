@@ -1,0 +1,387 @@
+body {
+  background-color: #c3cfe2;
+  margin: 1%;
+}
+
+article {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 350px 50px 185px auto;
+}
+
+section {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #fff;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10%;
+  font-size: 25px;
+  color: gray;
+  line-height: 30px;
+}
+
+.foto {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color: #686de0;
+  text-align: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 50px;
+  border-radius: 100px;
+  width: 140px;
+  border: 8px solid white;
+  display: block;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  grid-column: 2/3;
+  grid-row: 3/5;
+  background-color: #686de0;
+  text-align: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 50px;
+}
+footer h1 {
+  color: white;
+  margin-top: 100px;
+}
+footer h2 {
+  color: lightgrey;
+}
+
+/* vanaf hier media voor tablet !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #c3cfe2;
+    margin: 5%;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: auto 500px auto;
+    grid-template-rows: auto 350px 50px 185px auto;
+  }
+
+  section {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #fff;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 40px;
+    font-size: 25px;
+    color: gray;
+    line-height: 45px;
+  }
+
+  .foto {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: #686de0;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 50px;
+    border-radius: 100px;
+    width: 140px;
+    border: 8px solid white;
+    display: block;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  footer {
+    grid-column: 2/3;
+    grid-row: 3/5;
+    background-color: #686de0;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 50px;
+  }
+  footer h1 {
+    color: white;
+    margin-top: 100px;
+  }
+  footer h2 {
+    color: lightgrey;
+  }
+}
+body {
+  background-color: #c3cfe2;
+  margin: 5%;
+}
+
+main {
+  display: grid;
+  grid-gap: 1%;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+p:first-of-type {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.afterhover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0;
+  transition: opacity 700ms;
+  background-color: black;
+  border-radius: 15px;
+}
+.afterhover:hover {
+  opacity: 1;
+}
+
+/* vanaf hier media voor tablet !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #c3cfe2;
+  }
+
+  main {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+  }
+
+  p:first-of-type {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 3%;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 3%;
+  }
+
+  .afterhover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Times New Roman", Times, serif;
+    opacity: 0;
+    transition: opacity 700ms;
+    background-color: black;
+    border-radius: 3%;
+  }
+  .afterhover:hover {
+    opacity: 1;
+  }
+}
+/* vanaf hier media voor pc !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 2% 10% 2% 10%;
+    background-color: #c3cfe2;
+  }
+
+  main {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+  }
+
+  p:first-of-type {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 3%;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 3%;
+  }
+
+  .afterhover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Times New Roman", Times, serif;
+    opacity: 0;
+    transition: opacity 700ms;
+    background-color: black;
+    border-radius: 3%;
+  }
+  .afterhover:hover {
+    opacity: 1;
+  }
+}
+/*
+p{
+    display: inline;
+    margin-left: 15px;
+    text-decoration: underline;
+    font-size: 15px;
+
+}
+
+.social-media.blog{
+    width: 240px;
+    height: 40px;
+    transition: ease-in-out;
+    transition-duration: 350ms;
+    &:hover{
+        transform: translateX(-200px)
+    @include makeup(#e17b77, 2);  
+
+       content: Connect on Linkedin;
+    content: Like my facebook page;
+}
+}
+
+*/
+.social-media.blog {
+  position: fixed;
+  bottom: 200px;
+  right: 0;
+  width: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: #e17b77;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.social-media.twitter {
+  position: fixed;
+  bottom: 160px;
+  right: 0;
+  width: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: #00aced;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.social-media.linkedin {
+  position: fixed;
+  bottom: 120px;
+  right: 0;
+  width: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: #007bb6;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.social-media.facebook {
+  position: fixed;
+  bottom: 80px;
+  right: 0;
+  width: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  color: white;
+  background-color: #3b5998;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.social-media.facebook:hover {
+  transition: 800ms ease-in-out;
+  position: fixed;
+  bottom: 80px;
+  right: 0px;
+  width: 250px;
+}
+.social-media.facebook:hover::after {
+  content: "Add me on Facebook";
+  display: inline;
+  background-color: #3b5998;
+}
+
+.social-media.github {
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+  font-size: 20px;
+  color: white;
+  background-color: #333;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.social-media.github:hover {
+  transition: 800ms ease-in-out;
+  position: fixed;
+  bottom: 40px;
+  right: 0px;
+  width: 250px;
+}
+.social-media.github:hover::after {
+  content: "See projects on Github";
+  display: inline;
+  background-color: #333;
+}/*# sourceMappingURL=styles.css.map */

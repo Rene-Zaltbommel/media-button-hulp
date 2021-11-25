@@ -1,0 +1,136 @@
+@import './variables';
+
+body{
+    background-color:#c3cfe2;
+    margin:1%;
+}
+
+
+article{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 350px 50px 185px auto;   
+}
+
+section{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color:#fff;
+    text-align:$center;
+    border-top-left-radius: $borderRadius;
+    border-top-right-radius: $borderRadius;
+    padding:10%;
+    font-size: 25px;
+    color: gray;
+    line-height: 30px;
+
+     
+}
+.foto{
+    grid-column:2/3;
+    grid-row: 3/4;
+    background-color:#686de0;
+    text-align: $center;
+    border-bottom-left-radius: $borderRadius;
+    border-bottom-right-radius: $borderRadius;
+    margin-bottom: 50px;
+    border-radius:100px;
+    width: 140px;
+    border:8px solid white;
+    display: block;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer{
+  
+    grid-column:2/3;
+    grid-row: 3/5;
+    background-color:#686de0;
+    text-align: $center;
+    border-bottom-left-radius: $borderRadius;
+    border-bottom-right-radius: $borderRadius;
+    margin-bottom: 50px;
+    
+    h1{
+        color: white;
+        margin-top: 100px;
+    }
+    h2{
+         color:lightgrey;
+         
+    }
+            
+}
+
+/* vanaf hier media voor tablet !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+@media screen and (min-width: 768px){
+    body{
+        background-color:#c3cfe2;
+        margin:5%;
+    }
+    
+    
+    article{
+        display: grid;
+        grid-template-columns: auto 500px auto;
+        grid-template-rows: auto 350px 50px 185px auto;   
+    }
+    
+    section{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-color:#fff;
+        text-align:$center;
+        border-top-left-radius: $borderRadius;
+        border-top-right-radius: $borderRadius;
+        padding:40px;
+        font-size: 25px;
+        color: gray;
+        line-height: 45px;
+         
+    }
+    .foto{
+        grid-column:2/3;
+        grid-row: 3/4;
+        background-color:#686de0;
+        text-align: $center;
+        border-bottom-left-radius: $borderRadius;
+        border-bottom-right-radius: $borderRadius;
+        margin-bottom: 50px;
+        border-radius:100px;
+        width: 140px;
+        border:8px solid white;
+        display: block;
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    footer{
+      
+        grid-column:2/3;
+        grid-row: 3/5;
+        background-color:#686de0;
+        text-align: $center;
+        border-bottom-left-radius: $borderRadius;
+        border-bottom-right-radius: $borderRadius;
+        margin-bottom: 50px;
+        
+        h1{
+            color: white;
+            margin-top: 100px;
+        }
+        h2{
+             color:lightgrey;
+             
+        }
+                
+    }
+
+
+}

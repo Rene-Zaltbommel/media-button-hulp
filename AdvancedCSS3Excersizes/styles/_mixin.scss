@@ -1,0 +1,7 @@
+@mixin makeup($background){
+    font-size: 20px;
+    color: white;
+    background-color:$background;
+    padding-top: 10px;
+    padding-left: 10px;
+}
